@@ -2,6 +2,11 @@ import os
 import reflex as rx
 from openai import OpenAI
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
+api_key = os.getenv("OPENAI_API_KEY")
 
 # Checking if the API key is set properly
 if not os.getenv("OPENAI_API_KEY"):
